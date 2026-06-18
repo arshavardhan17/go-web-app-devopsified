@@ -1,91 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>    
+    <title>Arsha Store | Premium Gadgets</title>
+    <meta name="description"
+        content="Discover the most premium selection of gadgets and technology at Arsha Store. Quality meets innovation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="courses">Courses</a></li>
+        <div class="container nav">
+            <a href="/home" class="logo">ARSHA STORE</a>
+            <ul class="nav-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/courses">Products</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
-        </nav>
+            <a href="/courses" class="btn" style="padding: 10px 20px; font-size: 0.9rem;">Shop Now</a>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h1>Learn DevOps from Basics</h1>
-            <p>The main purpose of this website is to guide people on how to learn DevOps 
-                from basics for Free. We will provide you with the best resources to learn.
-            </p>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Elevate Your Digital <br><span style="color: var(--accent-color)">Lifestyle</span></h1>
+                <p>Curated premium tech essentials designed for those who demand excellence in every detail.</p>
+                <div class="hero-btns">
+                    <a href="/courses" class="btn">Explore Collection</a>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Overview</h2>
-            <p> Zero to Hero courses on all DevOps tools and popular Cloud(AWS and Azure) platform</p>
-        </section>
-
-        <section>
-            <h2>Courses Offered</h2>
-            <p>Please look at the <a href="courses">courses</a> section.</p>  
+        <section class="container">
+            <div class="section-title">
+                <h2>Featured Products</h2>
+                <p>Most loved by our community</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="/static/images/product_watch_1781772211906.png" alt="Arsha Watch X" class="product-img">
+                    <div class="product-info">
+                        <h3>Arsha Watch X</h3>
+                        <p class="product-price">$299.00</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/static/images/product_headphones_1781772279706.png" alt="Sonic Pro Headphones"
+                        class="product-img">
+                    <div class="product-info">
+                        <h3>Sonic Pro Headphones</h3>
+                        <p class="product-price">$199.00</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/static/images/product_smart_home_1781772340033.png" alt="Smart Hub Neo"
+                        class="product-img">
+                    <div class="product-info">
+                        <h3>Smart Hub Neo</h3>
+                        <p class="product-price">$149.00</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; Abhishek.Veeramalla</p>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/home">Home</a>
+                <a href="/courses">Products</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2024 Arsha Store. All rights reserved.</p>
+        </div>
     </footer>
 </body>
+
 </html>
